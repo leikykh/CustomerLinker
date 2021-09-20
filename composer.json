@@ -1,0 +1,24 @@
+{
+    "name": "leikykh/linked_data_importer",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "9.5.x-dev"
+    },
+    "authors": [
+        {
+            "name": "leikykh",
+            "email": "leikykhh@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "LinkedDataImporter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LinkedDataImporter\\Tests\\": "tests/"
+        }
+    }
+}

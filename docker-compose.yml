@@ -1,0 +1,10 @@
+version: '3'
+services:
+  linked-data-importer:
+    image: php
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: linked-data-importer-php-app
+    volumes:
+      - ./:/app
