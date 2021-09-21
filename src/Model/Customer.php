@@ -2,6 +2,9 @@
 
 namespace LinkedDataImporter\Model;
 
+/**
+ * Just object-oriented data representation
+ */
 class Customer
 {
     private int $id;

@@ -4,6 +4,10 @@ namespace LinkedDataImporter\DataStructure;
 
 use LinkedDataImporter\Model\Customer;
 
+/**
+ * Simple List implementation
+ * Designed to facilitate contract compliance and simplify data handling
+ */
 class CustomerList
 {
     private array $list;

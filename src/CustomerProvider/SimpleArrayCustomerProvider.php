@@ -6,6 +6,9 @@ use LinkedDataImporter\Contract\CustomerProviderInterface;
 use LinkedDataImporter\DataStructure\CustomerList;
 use LinkedDataImporter\Model\Customer;
 
+/**
+ * Simple data provider for debugging and testing
+ */
 class SimpleArrayCustomerProvider implements CustomerProviderInterface
 {
     public function getCustomers(): CustomerList
@@ -20,6 +23,5 @@ class SimpleArrayCustomerProvider implements CustomerProviderInterface
 
     public function saveCustomers(CustomerList $customerList): void
     {
-        var_dump($customerList);
     }
 }

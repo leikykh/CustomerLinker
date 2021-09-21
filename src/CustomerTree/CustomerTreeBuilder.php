@@ -5,6 +5,9 @@ namespace LinkedDataImporter\CustomerTree;
 use LinkedDataImporter\DataStructure\CustomerList;
 use LinkedDataImporter\Model\Customer;
 
+/**
+ * Directly solves the task - builds chains of duplicates
+ */
 class CustomerTreeBuilder
 {
     private array $parentsState;
