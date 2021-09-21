@@ -19,11 +19,21 @@ Run container's terminal like this:
 ```bash
 docker exec -it inked-data-importer-php-app sh
 ```
+Install dependencies (only phpunit wil be installed, everything else is a pure php as requested :wink:):
+```bash
+composer install
+```
 And then run the application inside container like this:
 ```bash
 php public/index.php
 ```
 The result will be store at **"data/duplicates_chain.csv"**
+
+## Tests
+Run tests under container like this:
+```bash
+php vendor/bin/phpunit tests
+```
 
 ## Requirements
 Filename **customers.csv** is a MUST. :man_teacher:
