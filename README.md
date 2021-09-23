@@ -17,7 +17,7 @@ If you don't it will use test csv file.
 
 Run container's terminal like this:
 ```bash
-docker exec -it inked-data-importer-php-app sh
+docker exec -it linked-data-importer-php-app sh
 ```
 Install dependencies (only phpunit wil be installed, everything else is a pure php as requested :wink:):
 ```bash
@@ -27,7 +27,7 @@ And then run the application inside container like this:
 ```bash
 php public/index.php
 ```
-The result will be store at **"data/duplicates_chain.csv"**
+The result will be stored at **"data/duplicates_chain.csv"**
 
 ## Tests
 Run tests under container like this:
