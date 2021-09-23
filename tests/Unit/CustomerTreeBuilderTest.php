@@ -3,7 +3,7 @@
 namespace LinkedDataImporter\Tests\Unit;
 
 use LinkedDataImporter\CustomerProvider\SimpleArrayCustomerProvider;
-use LinkedDataImporter\CustomerTree\CustomerTreeBuilder;
+use LinkedDataImporter\CustomerChain\CustomerChainBuilder;
 use PHPUnit\Framework\TestCase;
 
 class CustomerTreeBuilderTest extends TestCase
@@ -12,7 +12,7 @@ class CustomerTreeBuilderTest extends TestCase
     {
         $simpleArrayCustomerProvider = new SimpleArrayCustomerProvider();
 
-        $customerTreeBuilder = new CustomerTreeBuilder();
+        $customerTreeBuilder = new CustomerChainBuilder();
 
         $customerList = $customerTreeBuilder->build($simpleArrayCustomerProvider->getCustomers());
 

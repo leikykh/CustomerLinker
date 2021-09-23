@@ -1,12 +1,12 @@
 <?php
 
+use LinkedDataImporter\CustomerChain\CustomerChainBuilder;
 use LinkedDataImporter\CustomerProvider\CsvCustomerProvider;
-use LinkedDataImporter\CustomerTree\CustomerTreeBuilder;
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 $customerProvider = new CsvCustomerProvider(dirname(__DIR__) . '/data/customers.csv');
-$customerTreeBuilder = new CustomerTreeBuilder();
+$customerTreeBuilder = new CustomerChainBuilder();
 
 $customerList = $customerProvider->getCustomers();
 $customerList = $customerTreeBuilder->build($customerList);
